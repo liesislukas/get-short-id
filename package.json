@@ -1,6 +1,6 @@
 {
   "name": "get-short-id",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Random ID generator function with options to provide prefix and character set. Uses UUID v4 as random string source.",
   "main": "index.js",
   "scripts": {},
