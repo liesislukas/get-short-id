@@ -1,0 +1,26 @@
+{
+  "name": "get-short-id",
+  "version": "1.0.2",
+  "description": "Random ID generator function with options to provide prefix and character set. Uses UUID v4 as random string source.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liesislukas/get-short-id.git"
+  },
+  "keywords": [
+    "uuid4-based",
+    "random",
+    "id"
+  ],
+  "author": "Lukas Liesis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liesislukas/get-short-id/issues"
+  },
+  "homepage": "https://github.com/liesislukas/get-short-id#readme",
+  "dependencies": {
+    "any-base": "^1.1.0",
+    "lite-uuid-v4": "^1.0.0"
+  }
+}
