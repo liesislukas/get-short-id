@@ -7,6 +7,8 @@ multiple times. Often this is not needed. What is very usefull instead is to hav
 ```javascript
 const getId = require('get-short-id');
 
+// getId('prefix', 'character-set')
+
 for(let i = 0; i < 10; i++) {
   console.log(getId());
 }
@@ -55,13 +57,13 @@ u-O7gBtZuoJ8y1Gfcj8ULN
 u-k3D_VPocpD1Ag4kVAbjL
 ```
 
-## Characters set
+## Characters set (optional)
 
 Default set of characters used to encode random id is this:
 
 `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_`
 
-Yet you can provide your own as needed.
+Yet you can provide your own as needed. You must provide at least 2 characters.
 
 ```javascript
 for(let i = 0; i < 10; i++) {
