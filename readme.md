@@ -1,13 +1,12 @@
 `npm i get-short-id`
 
-This package uses UUID v4 as base random string yet it removes all not usefull parts. Each uuid v4 string has "4" to identify uuid version, all uuid v4 strings also have "-"
-multiple times. Often this is not needed. What is very usefull instead is to have prefixes for IDs to identify what kind of object this ID represents. Like user IDs start with `u-`
+It is useful to have prefixes for IDs to identify what kind of object this ID represents. Like user IDs start with `u-`
 , invoices with `in-` and so on.
 
 ```javascript
 const getId = require('get-short-id');
 
-// getId('prefix', 'character-set')
+// getId('prefix', 'custom-character-set')
 
 for(let i = 0; i < 10; i++) {
   console.log(getId());
@@ -131,3 +130,14 @@ i2'Į&36HbvŲHnhm1ZD
 rs}WZ?z/#=ŠĄvĄ$.QG
 yo[abXqsz3i-=$[*Žž
 ```
+
+
+## Fun Math game
+
+- Generate 1000 IDs per second
+- Continue doing so for 2 billion years
+
+Congrats! You have 1% probability to witness a collision
+
+(we take 23 characters from nanoid)
+https://zelark.github.io/nano-id-cc/

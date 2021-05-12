@@ -1,14 +1,11 @@
-const anyBase = require('any-base');
-const uuid = require('lite-uuid-v4');
+const {nanoid} = require('nanoid');
 
 function getId(prefix, chars) {
   prefix = typeof prefix === 'string' ? prefix : '';
   chars = chars || '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_';
-  const fromHex = anyBase(anyBase.HEX, chars);
-  let _uuid = uuid();
-  // skip version number & "-"
-  _uuid = _uuid.slice(0, 8) + _uuid.slice(9, 13) + _uuid.slice(15, 18) + _uuid.slice(15, 18) + _uuid.slice(24);
-  return prefix + fromHex(_uuid);
+  // generate 1k IDs/second and you will need 2 billion years to have 1% probability of 1 collision
+  // https://zelark.github.io/nano-id-cc/
+  return prefix + nanoid(chars, 24);
 }
 
 module.exports = getId;
