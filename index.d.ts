@@ -1,7 +1,7 @@
 export default function getId(options: {
   /**
    * @param {string} If prefix = "u-" IDs will be something like: u-a487t6grede...
-   * @description getId({ prefix: `u-${Date.now()}`, count: 14 })
+   * @description getId({ prefix: \`u-${Date.now()}\` })
    * */
   prefix?: string,
   /**

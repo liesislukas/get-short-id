@@ -1,6 +1,6 @@
 {
   "name": "get-short-id",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "Random ID generator function with options to provide prefix and character set. Uses nanoid(23) as random string source.",
   "main": "index.js",
   "types": "index.d.ts",
