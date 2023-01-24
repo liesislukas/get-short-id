@@ -1,6 +1,6 @@
 {
   "name": "get-short-id",
-  "version": "3.0.8",
+  "version": "3.0.10",
   "description": "Random ID generator function with options to provide prefix and character set. Uses nanoid(23) as random string source.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/liesislukas/get-short-id#readme",
   "dependencies": {
-    "nanoid": "^4.0.0"
+    "nanoid": "^3.3.4"
   },
   "devDependencies": {
     "@types/nanoid": "^3.0.0",
